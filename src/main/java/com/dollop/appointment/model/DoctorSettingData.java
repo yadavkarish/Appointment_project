@@ -1,7 +1,10 @@
 package com.dollop.appointment.model;
 
-public class DoctorSettingData {
-	
+import java.util.ArrayList;
+
+public class DoctorSettingData 
+{
+	private int doctorId;
 	private String firstName;
 	private String lastName;
 	private String mobileNumber;
@@ -19,19 +22,49 @@ public class DoctorSettingData {
 	private String pricing;
 	private String services;
 	private String specialist;
-	private String [] degree;
-	private String [] college;
-	private String [] yearCompletetion;
-	private String [] hospitalName;
+	
+	private ArrayList<Integer> degreeId;
+	private ArrayList<String> degree;
+	private ArrayList<String> college;
+	private ArrayList<String> yearCompletetion;
+	
+	private ArrayList<Integer> hospitalId;
+	private ArrayList<String> hospitalName;
 	private String [] from;
 	private String [] to;
-	private String [] Designation;
+	private String [] designation;
 	private String [] award;
 	private String [] awardYear;
 	private String [] memberships;
 	private String [] registration;
 	private String [] registrationYear;
 
+	public ArrayList<Integer> getDegreeId()
+	{
+		return degreeId;
+	}
+	public void setDegreeId(ArrayList<Integer> degreeId)
+	{
+		this.degreeId= degreeId ;
+	}
+	
+	public String[] getHospitalId()
+	{
+		return hospitalId;
+	}
+	public void setHospitalId(String [] hospitalId)
+	{
+		this.hospitalId = hospitalId;
+	}
+	
+	public int getDoctorId()
+	{
+		return doctorId;
+	}
+	public void setDoctorId(int doctorId)
+	{
+		this.doctorId = doctorId;
+	}
 	public String getFirstName() {
 	return firstName;
 	}
@@ -151,88 +184,100 @@ public class DoctorSettingData {
 	this.specialist = specialist;
 	System.out.println(this.specialist);
 	}
-	public String[] getDegree() {
-	return degree;
+	
+	public ArrayList<String> getDegree() 
+	{
+		return degree;
 	}
-	public void setDegree(String[] degree) {
-	this.degree = degree;
-
-	System.out.println(this.degree[0]);
-	System.out.println(this.degree[1]);
+	public void setDegree(ArrayList<String> degree) 
+	{
+		this.degree = degree;
+	
+//		System.out.println(this.degree[0]);
+//		System.out.println(this.degree[1]);
 	}
-	public String[] getCollege() {
-	return college;
+	
+	public ArrayList<String> getCollege() 
+	{
+		return college;
 	}
-	public void setCollege(String[] college) {
-	this.college = college;
-	System.out.println(this.college[0]);
-	System.out.println(this.college[1]);
+	
+	public void setCollege(ArrayList<String> college) 
+	{
+		this.college = college;
+//		System.out.println(this.college[0]);
+//		System.out.println(this.college[1]);
 	}
-	public String[] getYearCompletetion() {
-	return yearCompletetion;
+	
+	public ArrayList<String> getYearCompletetion() 
+	{
+	
+		return yearCompletetion;
 	}
-	public void setYearCompletetion(String[] yearCompletetion) {
-	this.yearCompletetion = yearCompletetion;
-	System.out.println(this.yearCompletetion[0]);
-	System.out.println(this.yearCompletetion[1]);
+	public void setYearCompletetion(ArrayList<String> yearCompletetion) 
+	{
+		this.yearCompletetion = yearCompletetion;
+//		System.out.println(this.yearCompletetion[0]);
+//		System.out.println(this.yearCompletetion[1]);
 	}
+	
+	
 	public String[] getHospitalName() {
-	return hospitalName;
+		return hospitalName;
 	}
 	public void setHospitalName(String[] hospitalName) {
-	this.hospitalName = hospitalName;
-	System.out.println(this.hospitalName[0]);
-	System.out.println(this.hospitalName[1]);
+		this.hospitalName = hospitalName;
+		System.out.println(this.hospitalName[0]);
+		System.out.println(this.hospitalName[1]);
 	}
 	public String[] getFrom() {
-	return from;
+		return from;
 	}
 	public void setFrom(String[] from) {
-	this.from = from;
+		this.from = from;
 	}
 	public String[] getTo() {
-	return to;
+		return to;
 	}
 	public void setTo(String[] to) {
-	this.to = to;
+		this.to = to;
 	}
 	public String[] getDesignation() {
-	return Designation;
+		return designation;
 	}
 	public void setDesignation(String[] designation) {
-	Designation = designation;
+		this.designation = designation;
 	}
 	public String[] getAward() {
-	return award;
+		return award;
 	}
 	public void setAward(String[] award) {
-	this.award = award;
+		this.award = award;
 	}
 	public String[] getAwardYear() {
-	return awardYear;
+		return awardYear;
 	}
 	public void setAwardYear(String[] awardYear) {
-	this.awardYear = awardYear;
+		this.awardYear = awardYear;
 	}
 	public String[] getMemberships() {
-	return memberships;
+		return memberships;
 	}
 	public void setMemberships(String[] memberships) {
-	this.memberships = memberships;
+		this.memberships = memberships;
 	}
 	public String[] getRegistration() {
-	return registration;
+		return registration;
 	}
 	public void setRegistration(String[] registration) {
-	this.registration = registration;
+		this.registration = registration;
 	}
 	public String[] getRegistrationYear() {
-	return registrationYear;
+		return registrationYear;
 	}
 	public void setRegistrationYear(String[] registrationYear) {
-	this.registrationYear = registrationYear;
+		this.registrationYear = registrationYear;
 	}
 
-	// stat
-
+	
 }

@@ -29,7 +29,7 @@
 	</head>
 	<body>
 	<!--Manage session -->
-		  <%if(session.getAttribute("type") == "doctor"){ %>
+		 <%--  <%if(session.getAttribute("type") == "doctor"){ %>
 			
 			<% response.sendRedirect("doctor-dashboard.jsp");%>
 			
@@ -41,7 +41,7 @@
 			 
 			 <% response.sendRedirect("admin/index.jsp");%>
 			
-			<%}%>
+			<%}%> --%>
 		<!--Manage session end -->
 	
 		<!-- Main Wrapper -->
@@ -226,7 +226,7 @@
 														<a class="timing" href="#">
 															<span>10:00</span> <span>AM</span>
 														</a>
-														<a class="timing" href="#">
+														<a class="timing selected" href="#">
 															<span>11:00</span> <span>AM</span>
 														</a>
 													</li>
